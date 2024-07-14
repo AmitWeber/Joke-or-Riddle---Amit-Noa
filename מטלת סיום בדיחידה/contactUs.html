@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.png">
+    <meta name="description" content="דף יצירת קשר - דברו איתנו בכל נושא שיעלה לכם והציעו בדיחות/חידות חדשות למאגר!" />
+    <meta name="keywords" content="טלפון, מייל, שם פרטי, שם משפחה" />
+    <meta name="author" content="נועה ועמית" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="containerContactPage" class="heeboFont">
+        <header>
+            <nav aria-label="mainNav" class="mainNav">
+                <ul class="areaNavButtons">
+                    <div id="rightNav">
+                        <li class="navButtonDesign">
+                           <a href="joke.html">בדיחה</a>
+                              <ul>
+                                 <li><a href="#programmars" class="notActive">מתכנתים</a></li>
+                                 <li><a href="#board" class="notActive">קרש</a></li>
+                                 <li><a href="#animals" class="notActive">חיות</a></li>
+                                 <li><a href="#wordGames" class="notActive">משחקי מילים</a></li>
+                                 <li><a href="#family" class="notActive">משפחה</a></li>
+                              </ul>
+                        </li>
+
+                        <li class="navButtonDesign">
+                           <a href="riddle.html" >חידה</a>
+                              <ul>
+                                 <li><a href="#logic" class="notActive">היגיון</a></li>
+                                 <li><a href="#whoAmI" class="notActive">מי אני</a></li>
+                                 <li><a href="#whatsTheConnection" class="notActive">מה הקשר</a></li>
+                                 <li><a href="#funny" class="notActive">מצחיקות</a></li>
+                                 <li><a href="#generalKnowladge" class="notActive">ידע כללי</a></li>
+                              </ul>
+                        </li>
+                    </div>
+
+                        <li id="mainLogo">
+                           <a href="index.html">
+                             <img src="images/logo.png" alt="לוגו בדיחה או חידה"
+                             style="width: 200px; height: 155px;"></a>     
+                        </li>
+                        
+                    <div id="leftNav">
+                       <li class="navButtonDesign">
+                          <a href="about.html" >אודות</a>
+                       </li>
+
+                       <li class="navButtonDesign">
+                          <a href="contactUs.html" >צור קשר</a>
+                       </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        
+ <main>
+     <nav aria-label="breadCrumbs">
+         <ol>
+             <li><a href="index.html">דף הבית</a></li>
+             <li><a href="contactUs.html">צור קשר</a></li>                                      
+         </ol>
+     </nav>
+
+     <div id="seperateImageText">
+         <div id="contactText">
+             <h1>דברו איתנו!<br/>יש לכם בדיחה קורעת להוסיף למאגר? <br/> או אולי חידה מסקרנת שתגרום לכולם לגרד את הראש פעמיים?<br/> אולי סתם בא לכם לדבר איתנו!<br/><br/>צרו איתנו קשר עוד היום ונענה בהקדם!</h1>
+         </div>
+         <div id="contactImage">
+             <img src="images/contactPicture.png" alt="תמונה של נציגה ואיש משוחחים בטלפון"
+             style="width: 550px; height: 400px;">
+         </div>
+     </div>
+
+     <form>
+         <span id="requiredField">*  שדה חובה</span>
+             <input type="hidden" id="myEmail" name="name" value="bdihaHidaEmail">
+
+                 <div id="firstLast">                        
+                     <label for="contactfirstName">
+                             <span class="mustFillStar">*</span>
+                             הכנס שם פרטי:
+                             <br/>
+                                 <input type="text" id="contactfirstName" placeholder="הקלד כאן.." required />
+                                 <br/>
+                     </label>
+
+                     <label for="contactLastName">
+                             <span class="mustFillStar">*</span>
+                             הכנס שם משפחה:
+                             <br/>
+                                 <input type="text" id="contactLastName" placeholder="הקלד כאן.." required/>
+                                 <br/>
+                     </label>
+                 </div>
+
+                 <div id="emailDropdown">
+                     <label for="email">
+                         <span class="mustFillStar">*</span>
+                         הכנס אימייל:
+                         <br/>
+                             <input type="email" id="email"  name="email" placeholder="email@address.com" required>               
+                     </label>
+
+                     <label for="dropdown">
+                         <span class="mustFillStar">*</span>
+                         <br/>
+                             <select id="dropdown" required>
+                                 <option value="" disabled selected> נא לבחור ערך</option>
+                                 <option value="1"> אני המצאתי את הבדיחה / חידה.</option>
+                                 <option value="2"> זאת בדיחה / חידה שמצאתי באתר אחר.</option>
+                                 <option value="3"> לא קשור. פונה בנושא אחר.</option>
+                             </select>
+                     </label>
+                 </div>
+                    
+                 <div id="fieldsetTextarea">
+                     <fieldset>
+
+                         <legend>
+                         <span class="mustFillStar">*</span>מגדר
+                         </legend>
+
+                             <label for="male">
+                                 <input type="radio" id="male" name="gender" /> זכר
+                             </label>
+                             <br/>
+                             <label for="female">
+                                 <input type="radio" id="female" name="gender" /> נקבה
+                             </label>
+                             <br/> 
+                             <label for="other">
+                                 <input type="radio" id="other" name="gender" checked required/> אחר
+                             </label>
+
+                     </fieldset>
+                
+                         <label for="freeText">
+                         <br/><br/>
+                             <textarea id="freeText" placeholder="כתוב לנו כאן בכל נושא!"></textarea>
+                         </label>
+                 </div>
+
+                <br/>
+                <label for="sendForm">
+                     <input type="submit" id="sendForm" value="שליחה" />
+                     <br/><br/><br/><br/><br/><br/><br/>
+                         <div id="feedback"></div>
+                 </label>
+     </form>
+ </main>
+
+ <footer>
+    <nav aria-label="footerNav" class="footerNav">
+        <ul class="footerNavButtons">
+            <li id="mainLogoFooter">
+                <a href="index.html">
+                <img src="images/logo.png" alt=" לוגו בדיחה או חידה פוטר"
+                style="width: 100px; height: 77.5px;"></li>
+        </ul>
+        <ul class="footerNavButtons">
+            <li class="footerNavButtonDesign">
+                <a href="about.html" >אודות</a>
+            </li>
+            <li class="footerNavButtonDesign">
+                <a href="contactUs.html" >צור קשר</a>
+            </li>
+            <li class="footerNavButtonDesign">
+                <a href="siteMap.html" >מפת האתר</a>
+            </li>
+        </ul>
+            <div id="freepik">התמונות באתר נלקחו מ-
+                <a href="https://www.freepik.com/">Freepik</a>
+            </div>
+ </footer>
+</div>
+</body>
+</html>
+        
